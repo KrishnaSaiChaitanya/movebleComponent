@@ -1,9 +1,9 @@
 <script setup>
 
-import Draggable from './components/draggableComponent.vue'
+import Draggable from './components/draggableComponent.ce.vue'
 
 </script>
 
 <template>
-<Draggable/>
+<!-- <Draggable/> -->
 </template>

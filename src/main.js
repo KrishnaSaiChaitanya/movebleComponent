@@ -1,6 +1,7 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp, defineCustomElement } from "vue";
+import Draggable from "./components/draggableComponent.ce.vue";
 
-createApp(App).mount('#app')
+const element = defineCustomElement(Draggable);
+customElements.define("movable-div", element);
