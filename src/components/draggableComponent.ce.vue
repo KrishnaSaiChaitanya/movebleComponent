@@ -64,7 +64,7 @@ window.addEventListener('storage', (event) => {
 });
 
 const dragMouseDown = (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   positions.clientX = event.clientX;
   positions.clientY = event.clientY;
   document.onmousemove = elementDrag;
@@ -72,7 +72,7 @@ const dragMouseDown = (event) => {
 };
 
 const dragTouchStart = (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   const touch = event.touches[0];
   positions.clientX = touch.clientX;
   positions.clientY = touch.clientY;
@@ -81,7 +81,7 @@ const dragTouchStart = (event) => {
 };
 
 const touchMove = (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   const touch = event.touches[0];
   positions.movementX = positions.clientX - touch.clientX;
   positions.movementY = positions.clientY - touch.clientY;
@@ -99,7 +99,7 @@ const closeTouchElement = () => {
 };
 
 const elementDrag = (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   positions.movementX = positions.clientX - event.clientX;
   positions.movementY = positions.clientY - event.clientY;
   positions.clientX = event.clientX;
