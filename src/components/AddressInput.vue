@@ -1,7 +1,7 @@
 <template>
-    <input type="text" class="form-control rounded-md border border-gray-300 py-1.5 px-3 mt-1" v-model="searchText"
+    <input type="text" class="form-control rounded-md border border-gray-300 py-1.5 px-3 mt-1 block w-full" v-model="searchText"
         @input="searchAddress" />
-    <ul ref="dropdownMenu" class="dropdown-menu ">
+    <ul ref="dropdownMenu" class="dropdown-menu">
         <li v-for="suggestion in suggestions">
             <a class="dropdown-item" href="#" @click="selectAddress(suggestion)">
                 {{ formatLabel(suggestion.label, 'start') }}<span
@@ -109,4 +109,6 @@ async function geoCode(street) {
     }
 }
 
+
 </script>
+

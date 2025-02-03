@@ -6,5 +6,5 @@ import LogoModel from './components/LogoModel.ce.vue';
 </script>
 
 <template>
-<!-- <Draggable/> -->
+<LogoModel/>
 </template>
