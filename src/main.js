@@ -1,7 +1,7 @@
 import "./assets/main.css";
 
 import { createApp, defineCustomElement } from "vue";
-import Draggable from "./components/draggableComponent.ce.vue";
+import LogoModel from "./components/LogoModel.ce.vue";
 
-const element = defineCustomElement(Draggable);
+const element = defineCustomElement(LogoModel);
 customElements.define("movable-div", element);
