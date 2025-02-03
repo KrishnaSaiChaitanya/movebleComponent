@@ -168,4 +168,31 @@ function openModal() {
 function closeModal() {
     isModalVisible.value = false;
 }
+
+import tailwindCSS from "@/assets/tailwind.css?raw"; // Import Tailwind styles as raw text
+
+const styleTag = document.createElement("style");
+styleTag.textContent = tailwindCSS;
+
+defineExpose({
+  attachStyle(el) {
+    el.shadowRoot?.appendChild(styleTag.cloneNode(true)); // Inject Tailwind styles into Shadow DOM
+  },
+});
+
 </script>
+
+<style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css");
+
+/* Example: Define styles for #jhbbjg */
+#jhbbjg {
+    background-color: #f3f4f6; /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+}
+</style>
