@@ -31,10 +31,10 @@
     "@babel/helper-validator-identifier" "^7.22.15"
     to-fast-properties "^2.0.0"
 
-"@esbuild/linux-x64@0.21.5":
+"@esbuild/darwin-arm64@0.21.5":
   version "0.21.5"
-  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.21.5.tgz"
-  integrity sha512-1rYdTpyv03iycF1+BhzrzQJCdOuAOtaqHTWJZCWvijKD2N5Xu0TtVC8/+1faWqcP9iBCWOmjmhoH94dH82BxPQ==
+  resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.21.5.tgz"
+  integrity sha512-DwqXqZyuk5AiWWf3UfLiRDJ5EDd49zg6O9wclZ7kUMv2WRFr4HKjXp/5t8JZ11QbQfUS6/cRCKGwYhtNAY88kQ==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -106,15 +106,10 @@
   resolved "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@rollup/rollup-linux-x64-gnu@4.34.0":
+"@rollup/rollup-darwin-arm64@4.34.0":
   version "4.34.0"
-  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.34.0.tgz"
-  integrity sha512-chZLTUIPbgcpm+Z7ALmomXW8Zh+wE2icrG+K6nt/HenPLmtwCajhQC5flNSk1Xy5EDMt/QAOz2MhzfOfJOLSiA==
-
-"@rollup/rollup-linux-x64-musl@4.34.0":
-  version "4.34.0"
-  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.34.0.tgz"
-  integrity sha512-jo0UolK70O28BifvEsFD/8r25shFezl0aUk2t0VJzREWHkq19e+pcLu4kX5HiVXNz5qqkD+aAq04Ct8rkxgbyQ==
+  resolved "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.34.0.tgz"
+  integrity sha512-gCs0ErAZ9s0Osejpc3qahTsqIPUDjSKIyxK/0BGKvL+Tn0n3Kwvj8BrCv7Y5sR1Ypz1K2qz9Ny0VvkVyoXBVUQ==
 
 "@tailwindcss/forms@^0.5.9":
   version "0.5.10"
@@ -842,6 +837,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+
+fsevents@~2.3.2, fsevents@~2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.1, function-bind@^1.1.2:
   version "1.1.2"
