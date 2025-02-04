@@ -1,5 +1,5 @@
 <template>
-    <input type="text" class="form-control rounded-md border border-gray-300 py-1.5 px-3 mt-1 block w-full" v-model="searchText"
+    <input type="text" :placeholder=label class="form-control rounded-md border border-gray-300 py-1.5 px-3 mt-1 block w-full" v-model="searchText"
         @input="searchAddress" />
     <ul ref="dropdownMenu" class="dropdown-menu">
         <li v-for="suggestion in suggestions">
@@ -33,7 +33,8 @@ const suggestions = reactive([])
 
 const emit = defineEmits(['addressSelect'])
 const props = defineProps({
-    mapboxOptions: Object
+    mapboxOptions: Object,
+    label: String
 })
 Object.assign(mapboxOptions, props.mapboxOptions)
 
